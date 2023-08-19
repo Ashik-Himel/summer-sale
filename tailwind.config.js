@@ -12,7 +12,19 @@ module.exports = {
         "2xl": "6rem",
       },
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#E527B2",
+        "text-color": "#111111",
+        "gray-color": "rgba(17, 17, 17, 0.50)",
+        "star-color": "#FFC107",
+        "banner-bg": "#F9F6E2",
+        "card-bg": "rgba(17, 17, 17, 0.05)",
+      },
+      fontFamily: {
+        "work-sans": "'Work Sans', sans-serif",
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {

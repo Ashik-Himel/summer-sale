@@ -5,11 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Summer Sale</title>
   <link rel="shortcut icon" href="images/congo.png" type="image/x-icon">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Fontawesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <h1 class="text-3xl">Hello Tailwind and Daisy UI !!!</h1>
+<body class="font-work-sans font-medium text-text-color">
+  
+  <!-- Header Section -->
+  <header class="bg-banner-bg">
+    <div class="container">
+      <div class="hero py-8">
+        <div class="hero-content flex-col md:flex-row-reverse">
+          <div class="flex-1">
+            <img src="./images/summer-sale.png" class="w-full max-w-sm block mx-auto" />
+          </div>
+          <div class="flex-1 text-center">
+            <span class="mb-3 block">---SALE FEVER---</span>
+            <h1 class="text-3xl lg:text-5xl font-bold mb-6">Purchase TK 200 or above & get <span class="text-primary">20% off</span></h1>
+            <div class="flex justify-center items-center gap-4">
+              <span>Use Promo Code</span>
+              <button class="btn-sm btn-primary rounded cursor-text">SELL200</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <!-- JavaScript -->
   <script src="js/script.js"></script>
