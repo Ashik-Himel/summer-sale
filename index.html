@@ -220,9 +220,9 @@
           <div class="md:mt-20 mb-8 w-full md:w-[250px]">
             <div class="bg-white p-6 rounded-xl mb-4">
               <h3 class="text-2xl font-semibold mb-3">Have coupon?</h3>
-              <form onsubmit="return false" class="flex">
-                <input class="input w-full border border-gray-300 rounded-e-none" type="text" name="coupon" id="coupon" placeholder="Coupon Code" required>
-                <button type="submit" class="btn btn-primary rounded-s-none">Apply</button>
+              <form onsubmit="return false" id="coupon-form" class="flex">
+                <input class="input w-full border border-gray-300 rounded-e-none" type="text" name="coupon-field" id="coupon-field" placeholder="Coupon Code" required>
+                <button type="submit" id="coupon-submit" class="btn btn-primary rounded-s-none" disabled>Apply</button>
               </form>
             </div>
             <div class="bg-white p-6 rounded-xl mb-4">
@@ -232,7 +232,7 @@
               <span class="block mb-2 text-[18px] font-semibold">Discount: <span id="discount" class="text-gray-color">0.00</span> <span class="text-gray-color">TK</span></span>
               <span class="block mb-2 text-[18px] font-semibold">Total: <span id="grand-total" class="text-gray-color">0.00</span> <span class="text-gray-color">TK</span></span>
               <hr class="my-8">
-              <button class="btn btn-primary w-full">Make Purchase</button>
+              <button id="purchase-btn" class="btn btn-primary w-full" disabled>Make Purchase</button>
             </div>
           </div>
         </div>
