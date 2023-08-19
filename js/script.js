@@ -6,6 +6,7 @@ const totalPrice = document.getElementById('total-price');
 const discount = document.getElementById('discount');
 const grandTotal = document.getElementById('grand-total');
 const purchaseBtn = document.getElementById('purchase-btn');
+const goHome = document.getElementById('go-home');
 
 const cards = document.getElementsByClassName('card');
 
@@ -49,3 +50,13 @@ for (let card of cards) {
     if (updatedTotal >= 200) couponSubmit.removeAttribute('disabled');
   })
 }
+
+goHome.addEventListener('click', function() {
+  discountPercentage = 0;
+  couponSubmit.setAttribute('disabled', 'true');
+  purchaseBtn.setAttribute('disabled', 'true');
+  itemList.innerHTML = '';
+  totalPrice.innerText = '0.00';
+  discount.innerText = '0.00';
+  grandTotal.innerText = '0.00';
+})

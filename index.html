@@ -221,23 +221,39 @@
             <div class="bg-white p-6 rounded-xl mb-4">
               <h3 class="text-2xl font-semibold mb-3">Have coupon?</h3>
               <form onsubmit="return false" id="coupon-form" class="flex">
-                <input class="input w-full border border-gray-300 rounded-e-none" type="text" name="coupon-field" id="coupon-field" placeholder="Coupon Code" required>
+                <input class="input w-full border border-gray-300 rounded-e-none" type="text" name="coupon-field"
+                  id="coupon-field" placeholder="Coupon Code" required>
                 <button type="submit" id="coupon-submit" class="btn btn-primary rounded-s-none" disabled>Apply</button>
               </form>
             </div>
             <div class="bg-white p-6 rounded-xl mb-4">
               <div id="item-list"></div>
               <hr class="my-8">
-              <span class="block mb-2 text-[18px] font-semibold">Total price: <span id="total-price" class="text-gray-color">0.00</span> <span class="text-gray-color">TK</span></span>
-              <span class="block mb-2 text-[18px] font-semibold">Discount: <span id="discount" class="text-gray-color">0.00</span> <span class="text-gray-color">TK</span></span>
-              <span class="block mb-2 text-[18px] font-semibold">Total: <span id="grand-total" class="text-gray-color">0.00</span> <span class="text-gray-color">TK</span></span>
+              <span class="block mb-2 text-[18px] font-semibold">Total price: <span id="total-price"
+                  class="text-gray-color">0.00</span> <span class="text-gray-color">TK</span></span>
+              <span class="block mb-2 text-[18px] font-semibold">Discount: <span id="discount"
+                  class="text-gray-color">0.00</span> <span class="text-gray-color">TK</span></span>
+              <span class="block mb-2 text-[18px] font-semibold">Total: <span id="grand-total"
+                  class="text-gray-color">0.00</span> <span class="text-gray-color">TK</span></span>
               <hr class="my-8">
-              <button id="purchase-btn" class="btn btn-primary w-full" disabled>Make Purchase</button>
+              <button id="purchase-btn" class="btn btn-primary w-full" onclick="modal_1.showModal()" disabled>Make Purchase</button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Modal -->
+    <dialog id="modal_1" class="modal text-center">
+      <form method="dialog" class="modal-box">
+        <img src="./images/congo.png" alt="Congratulations" class="block mx-auto mb-6">
+        <h2 class="text-3xl font-semibold mb-2">Congratulations</h2>
+        <p class="text-gray-color">Your Purchase the product</p>
+        <div class="modal-action justify-center">
+          <button id="go-home" class="btn btn-primary">Go Home</button>
+        </div>
+      </form>
+    </dialog>
   </main>
 
   <!-- JavaScript -->
