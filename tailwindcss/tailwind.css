@@ -4,6 +4,6 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary hover:bg-secondary text-white;
+    @apply bg-primary hover:bg-secondary text-white border-primary hover:border-secondary h-auto min-h-[40px] normal-case;
   }
 }

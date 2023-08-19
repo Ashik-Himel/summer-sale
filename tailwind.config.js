@@ -20,6 +20,7 @@ module.exports = {
         "star-color": "#FFC107",
         "banner-bg": "#F9F6E2",
         "card-bg": "rgba(17, 17, 17, 0.05)",
+        "body-bg": "#F8F8F8",
       },
       fontFamily: {
         "work-sans": "'Work Sans', sans-serif",
