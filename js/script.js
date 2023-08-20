@@ -9,21 +9,16 @@ const cards = document.getElementsByClassName("card");
 let discountPercentage = 0;
 
 document.getElementById("coupon-form").addEventListener("submit", function () {
-  if (discountPercentage !== 20) {
-    if (couponField.value === "SELL200") {
+  if (couponField.value === "SELL200") {
+    if (discountPercentage !== 20) {
       discountPercentage = 20;
       const currentTotal = parseFloat(totalPrice.innerText);
       const discountAmount = (currentTotal * (discountPercentage / 100)).toFixed(2);
       discount.innerText = discountAmount;
       grandTotal.innerText = (currentTotal - discountAmount).toFixed(2);
-      couponField.value = "";
-    } else {
-      alert("Invalid Coupon!!!");
-    }
-  } else {
-    alert("You already claimed this coupon!!!");
+    } else alert("You already claimed this coupon!!!");
     couponField.value = "";
-  }
+  } else alert("Invalid Coupon!!!");
 });
 
 for (let card of cards) {
