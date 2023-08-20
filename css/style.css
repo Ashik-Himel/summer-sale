@@ -1706,10 +1706,6 @@ html {
   padding-bottom: 5rem;
 }
 
-.pb-16 {
-  padding-bottom: 4rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1793,6 +1789,10 @@ html {
 
   .md\:w-\[250px\] {
     width: 250px;
+  }
+
+  .md\:w-\[260px\] {
+    width: 260px;
   }
 
   .md\:flex-row {
